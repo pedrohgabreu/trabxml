@@ -1,0 +1,21 @@
+<notasFiscais>
+    <notaFiscal>
+        <numero>001</numero>
+        <data>2024-11-22</data>
+        <cliente>João da Silva</cliente>
+        <valorTotal>123.45</valorTotal>
+    </notaFiscal>
+    <notaFiscal>
+        <numero>002</numero>
+        <data>2024-11-23</data>
+        <cliente>Maria Oliveira</cliente>
+        <valorTotal>678.90</valorTotal>
+    </notaFiscal>
+    <notaFiscal>
+        <numero>003</numero>
+        <data>2024-11-24</data>
+        <cliente>Carlos Souza</cliente>
+        <valorTotal>45.67</valorTotal>
+    </notaFiscal>
+</notasFiscais>
+
