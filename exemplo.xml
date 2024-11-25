@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notaFiscal>
+    <emitente>
+        <nome>Empresa ABC</nome>
+        <cnpj>12345678000199</cnpj>
+        <endereco>
+            <rua>Rua Exemplo</rua>
+            <cidade>São Paulo</cidade>
+            <estado>SP</estado>
+        </endereco>
+    </emitente>
+    <destinatario>
+        <nome>Cliente XYZ</nome>
+        <cpf>98765432100</cpf>
+        <endereco>
+            <rua>Rua Teste</rua>
+            <cidade>Rio de Janeiro</cidade>
+            <estado>RJ</estado>
+        </endereco>
+    </destinatario>
+    <itens>
+        <item>
+            <descricao>Produto 1</descricao>
+            <quantidade>2</quantidade>
+            <preco>50.00</preco>
+        </item>
+        <item>
+            <descricao>Produto 2</descricao>
+            <quantidade>1</quantidade>
+            <preco>150.00</preco>
+        </item>
+    </itens>
+    <valorTotal>250.00</valorTotal>
+</notaFiscal>

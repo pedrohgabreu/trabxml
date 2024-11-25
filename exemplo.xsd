@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="notaFiscal">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="emitente" type="EmitenteType"/>
+                <xs:element name="destinatario" type="DestinatarioType"/>
+                <xs:element name="itens">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="item" type="ItemType" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="valorTotal" type="xs:decimal"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="EmitenteType">
+        <xs:sequence>
+            <xs:element name="nome" type="xs:string"/>
+            <xs:element name="cnpj" type="xs:string"/>
+            <xs:element name="endereco" type="EnderecoType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="DestinatarioType">
+        <xs:sequence>
+            <xs:element name="nome" type="xs:string"/>
+            <xs:element name="cpf" type="xs:string"/>
+            <xs:element name="endereco" type="EnderecoType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="EnderecoType">
+        <xs:sequence>
+            <xs:element name="rua" type="xs:string"/>
+            <xs:element name="cidade" type="xs:string"/>
+            <xs:element name="estado" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ItemType">
+        <xs:sequence>
+            <xs:element name="descricao" type="xs:string"/>
+            <xs:element name="quantidade" type="xs:integer"/>
+            <xs:element name="preco" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
